@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    padding: 15px;
+    gap: 15px;
+    border-radius: 5px;
+}
+.pergunta{
+    background: rgba(150, 217, 246, 0.599);
+    padding: 20px;
+    grid-row: 1/3;
+    overflow-y: auto;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resposta{
+    width: 100%;
+    background: rgba(0, 255, 136, 0.355);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    padding: 15px;
+    grid-row: 3/4;
+    border-radius: 5px;
+}
+.resposta button{
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 18px;
+    border: none;
+    background: rgb(91, 185, 239);
+    color: white;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+.resposta button:hover{
+    background: rgb(60, 140, 187);
+}
+.resposta button:active{
+    scale: 0.9;
+}
+.pontuacao p{
+    border-bottom: solid 2px white;
+    padding: 10px 0;
+}
+.pontuacao{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    background: rgb(242, 84, 79);
+    border: solid 2px white;
+    color: white;
+    text-align: justify;
+    border-radius: 5px;
+}
